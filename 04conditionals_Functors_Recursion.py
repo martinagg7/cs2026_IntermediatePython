@@ -166,4 +166,19 @@ for functionTotest in [qSort, otherSort, otherSort2]:
 print(sorted("zxywabc"))
 
 
+
+
 import sys; sys.exit()
+
+import time
+startTime = time.time()
+sumEvens=list(range(0, 10000000, 2))
+duration = time.time() - startTime
+print(f"Time taken: {duration} seconds")
+
+
+for func in [sum, sumEvens]:
+    startTime = time.time()
+    result = func(list(range(0, 10000000, 2)))
+    duration = time.time() - startTime
+    print(f"Time taken: {duration} seconds")
