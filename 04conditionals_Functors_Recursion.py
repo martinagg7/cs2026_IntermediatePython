@@ -182,3 +182,22 @@ for func in [sum, sumEvens]:
     result = func(list(range(0, 10000000, 2)))
     duration = time.time() - startTime
     print(f"Time taken: {duration} seconds")
+
+
+
+
+def someSort(aList):
+    breakpoint()
+    return sorted(aList)
+
+
+def funnySort(aList):
+    for i in range(len(aList)):
+        for j in range(len(aList)):
+            if aList[i] < aList[j]:
+                aList[i], aList[j] = aList[j], aList[i]
+    return aList
+
+
+
+# HA DADO EN CLASE EL DEBUGER POR TERMIANL 
